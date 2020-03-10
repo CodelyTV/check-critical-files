@@ -1,0 +1,16 @@
+name: labeler
+
+on: [pull_request]
+
+jobs:
+  labeler:
+    runs-on: ubuntu-latest
+    name: Check for critical files
+    steps:
+      - uses: codelytv/check-critical-files@initial
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          critical_files: |
+            .env
+            action.yml
+          critical_files_commited_message: 'Heeeeeyyy!! Take a look!'
