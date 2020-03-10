@@ -36,6 +36,9 @@ str::quote() {
   echo "\"$1\""
 }
 
-str::ran() {
+str::contains() {
+  echo "$1" | grep "$2"
   echo "---- $1 ----- $2 -------"
+  echo ""
+  echo ""
 }

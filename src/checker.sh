@@ -10,8 +10,8 @@ checker::check() {
 #  log::message "$patterns"
 #  log::message "$message"
 
-  log::message "LA BUENA 222222"
-  echo "$patterns" | coll::map_2 str::ran "pedro"
+  log::message "LA BUENA 333333"
+  echo "$patterns" | coll::map_2 str::contains "$patterns"
 
   log::message "Total modifications: $modified_files"
 }
