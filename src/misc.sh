@@ -32,18 +32,6 @@ coll::map_2() {
   done
 }
 
-str::quote() {
-  echo "\"$1\""
-}
-
 str::contains() {
-  echo "$2 should be cointained"
-  echo "____________________"
-  echo "Inside: $1"
-  echo "____________________"
-  echo "+++++++"
   echo "$1" | grep "$2" || true
-  echo "+++++++"
-  echo ""
-  echo ""
 }
