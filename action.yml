@@ -4,7 +4,7 @@ inputs:
   GITHUB_TOKEN:
     description: 'GitHub token'
     required: true
-  critical_file:
+  critical_files:
     description: 'A newline separated list of critical files'
     required: true
   critical_files_commited_message:
@@ -16,7 +16,7 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.GITHUB_TOKEN }}
-    - ${{ inputs.critical_file }}
+    - ${{ inputs.critical_files }}
     - ${{ inputs.critical_files_commited_message }}
 branding:
   icon: 'alert-circle'

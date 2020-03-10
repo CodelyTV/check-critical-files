@@ -8,6 +8,7 @@ checker::check() {
 
   printf '%s\n' "${patterns[@]}"
 
+  log::message "$patterns"
   log::message "$message"
 
   log::message "Total modifications: $modified_files"
