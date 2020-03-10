@@ -9,7 +9,6 @@ fi
 
 export CHECK_CRITICAL_HOME
 
-echo "Running entrypoint"
 source "$CHECK_CRITICAL_HOME/src/main.sh"
 
 main "$@"
