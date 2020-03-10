@@ -9,7 +9,8 @@ fi
 
 export CHECK_CRITICAL_HOME
 
-echo "NEW ENTRYPOINT"
+echo "NEW ENTRYPOINT2"
+echo "NEW ENTRYPOINT3"
 
 source "$CHECK_CRITICAL_HOME/src/main.sh"
 
