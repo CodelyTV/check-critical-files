@@ -11,7 +11,8 @@ github::get_commit_modified_files() {
 }
 
 github::comment() {
-  local -r comment=$1
+  local -r comment=$2
+  local -r pr_number=$1
 
   curl -sSL \
     -H "Authorization: token $GITHUB_TOKEN" \
