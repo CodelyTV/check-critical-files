@@ -2,7 +2,7 @@
 
 checker::check() {
   local -r patterns="$1"
-  local -r message="$2"
+  local -r message=$(echo "${2//\\/\\\\}")
 
   local -r modified_files=$(github::get_commit_modified_files "$GITHUB_SHA")
   local -r pr_number=$(github_actions::get_pr_number)
