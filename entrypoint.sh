@@ -9,7 +9,7 @@ fi
 
 export CHECK_CRITICAL_HOME
 
-echo "E N T R Y . 2"
+echo "E N T R Y . 3"
 
 source "$CHECK_CRITICAL_HOME/src/main.sh"
 
