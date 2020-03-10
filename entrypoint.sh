@@ -9,6 +9,8 @@ fi
 
 export CHECK_CRITICAL_HOME
 
+echp "E N T R Y ."
+
 source "$CHECK_CRITICAL_HOME/src/main.sh"
 
 main "$@"
