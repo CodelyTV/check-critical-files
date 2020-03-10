@@ -10,7 +10,7 @@ checker::check() {
 #  log::message "$patterns"
 #  log::message "$message"
 
-  log::message "LA BUENA 55555"
+  log::message "LA BUENA 6666566566"
   echo "$patterns" | coll::map_2 str::contains "$modified_files"
 
   log::message "Total modifications: $modified_files"
