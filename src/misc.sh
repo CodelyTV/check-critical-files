@@ -37,7 +37,9 @@ str::quote() {
 }
 
 str::contains() {
+  echo "+++++++"
   echo "$1" | grep "$2"
+  echo "+++++++"
   echo "---- $1 ----- $2 -------"
   echo ""
   echo ""
