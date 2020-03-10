@@ -23,6 +23,15 @@ coll::map() {
   done
 }
 
+coll::map_2() {
+  local -r fn="$1"
+  local -r arg="$2"
+
+  for x in $(cat); do
+    "$fn" "$arg" "$x"
+  done
+}
+
 str::quote() {
   echo "\"$1\""
 }

@@ -11,7 +11,7 @@ checker::check() {
 #  log::message "$message"
 
   log::message "LA BUENA 222222"
-  echo "$patterns" | coll::map str::ran "pedro"
+  echo "$patterns" | coll::map_2 str::ran "pedro"
 
   log::message "Total modifications: $modified_files"
 }
