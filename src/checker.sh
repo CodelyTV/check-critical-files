@@ -10,6 +10,7 @@ checker::check() {
   local -r critial_modified_files=$(echo "$patterns" | coll::map_2 str::contains "$modified_files")
 
   log::message "Files: $critial_modified_files"
+  log::message "Message: $message"
 
    if [ -n "$critial_modified_files" ]; then
       github::comment "$pr_number" "$message\n$critial_modified_files"
