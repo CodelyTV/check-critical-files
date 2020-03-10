@@ -6,8 +6,7 @@ checker::check() {
 
   local -r modified_files=$(github::commit_modified_files "$GITHUB_SHA")
 
-  printf '%s\n' "${patterns[@]}"
-
+  log::message "STARTING"
   log::message "$patterns"
   log::message "$message"
 
