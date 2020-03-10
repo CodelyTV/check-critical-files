@@ -10,10 +10,7 @@ checker::check() {
 #  log::message "$patterns"
 #  log::message "$message"
 
-  for pattern in "${patterns[@]}"; do
-    echo "PATERNSITOOOO"
-    echo "$pattern"
-  done
+  echo "$patterns" | coll::map str::ran
 
   log::message "Total modifications: $modified_files"
 }

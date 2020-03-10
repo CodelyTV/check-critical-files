@@ -26,3 +26,7 @@ coll::map() {
 str::quote() {
   echo "\"$1\""
 }
+
+str::ran() {
+  echo "---- $1 -----"
+}
