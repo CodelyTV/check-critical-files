@@ -9,7 +9,7 @@ fi
 
 export CHECK_CRITICAL_HOME
 
-echo "CCHCHCHCHCH"
+echo "SISSISIS"
 
 source "$CHECK_CRITICAL_HOME/src/main.sh"
 
