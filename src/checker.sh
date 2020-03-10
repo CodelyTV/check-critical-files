@@ -13,6 +13,6 @@ checker::check() {
   log::message "Message: $message"
 
    if [ -n "$critial_modified_files" ]; then
-      github::comment "$pr_number" "$message\n$critial_modified_files"
+      github::comment "$pr_number" "'$message\n$critial_modified_files'"
     fi
 }
