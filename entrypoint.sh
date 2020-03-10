@@ -14,6 +14,8 @@ source "$CHECK_CRITICAL_HOME/src/main.sh"
 echo "-----------------------------"
 echo "$@"
 echo "-----------------------------"
+printf '%s\n' "${@[@]}"
+echo "-----------------------------"
 
 main "$@"
 
