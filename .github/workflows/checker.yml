@@ -12,5 +12,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           critical_files_commited_message: 'Heeeeeyyy!! Take a look!'
           critical_files: |
+            first.sh
             .env
             action.yml
