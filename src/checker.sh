@@ -7,8 +7,13 @@ checker::check() {
   local -r modified_files=$(github::commit_modified_files "$GITHUB_SHA")
 
   log::message "STARTING"
-  log::message "$patterns"
-  log::message "$message"
+#  log::message "$patterns"
+#  log::message "$message"
+
+  for pattern in "${patterns[@]}"; do
+    echo "PATERNSITOOOO"
+    echo "$pattern"
+  done
 
   log::message "Total modifications: $modified_files"
 }
