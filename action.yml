@@ -10,7 +10,7 @@ inputs:
   critical_files_commited_message:
     description: 'Message to show when listing all commited critical files'
     required: false
-    default: 'Caution! you have commited some critical files.'
+    default: 'Caution! you have commited some critical files'
 runs:
   using: 'docker'
   image: 'Dockerfile'
