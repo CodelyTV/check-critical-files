@@ -11,12 +11,6 @@ export CHECK_CRITICAL_HOME
 
 source "$CHECK_CRITICAL_HOME/src/main.sh"
 
-echo "-----------------------------"
-echo "$@"
-echo "-----------------------------"
-printf '%s\n' "${@[@]}"
-echo "-----------------------------"
-
 main "$@"
 
 exit $?
