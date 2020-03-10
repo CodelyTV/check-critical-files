@@ -5,6 +5,7 @@ echoerr() {
 }
 
 log::message() {
+  echo "--------------"
   echo "$@"
 }
 
