@@ -6,7 +6,7 @@ checker::check() {
 
   local -r modified_files=$(github::commit_modified_files "$GITHUB_SHA")
 
-  log::message "STARTING"
+  log::message "STARTINGaaaaa"
   log::message "TOKEN: $GITHUB_SHA"
 
   log::message "LA BUENA 888"
