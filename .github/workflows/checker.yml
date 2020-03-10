@@ -1,4 +1,4 @@
-name: labeler
+name: checker
 
 on: [pull_request]
 
