@@ -38,12 +38,12 @@ str::quote() {
 
 str::contains() {
   echo "$2 should be cointained"
+  echo "____________________"
+  echo "Inside: $1"
+  echo "____________________"
   echo "+++++++"
   echo "$1" | grep "$2" || true
   echo "+++++++"
-  echo "---- $1 ----- $2 -------"
-  echo ""
-  echo ""
   echo ""
   echo ""
 }
