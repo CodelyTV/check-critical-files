@@ -14,6 +14,13 @@ main() {
 
   export GITHUB_TOKEN="$1"
 
+  log::message "GITHUB ACTIONS DATA"
+
+  github_actions::print_all_data
+
+
+  log::message "APP DATA"
+
   checker::check "$2" "$3"
 
   exit $?
