@@ -10,7 +10,7 @@ inputs:
   critical_files:
     description: 'A newline separated list of critical files'
     required: true
-  critical_files_commited_message:
+  critical_message:
     description: 'Message to show when listing all commited critical files'
     required: false
     default: 'Caution! you have commited some critical files'
@@ -20,5 +20,5 @@ runs:
   args:
     - ${{ inputs.GITHUB_TOKEN }}
     - ${{ inputs.critical_files }}
-    - ${{ inputs.critical_files_commited_message }}
+    - ${{ inputs.critical_message }}
 

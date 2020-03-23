@@ -5,47 +5,39 @@
 </p>
 
 <h1 align="center">
-  🏷 Pull Request size labeler
+  👁 Check critical files
 </h1>
 
 <p align="center">
     <a href="https://github.com/CodelyTV"><img src="https://img.shields.io/badge/CodelyTV-OS-green.svg?style=flat-square" alt="codely.tv"/></a>
     <a href="http://pro.codely.tv"><img src="https://img.shields.io/badge/CodelyTV-PRO-black.svg?style=flat-square" alt="CodelyTV Courses"/></a>
-    <a href="https://github.com/marketplace/actions/pull-request-size-labeler"><img src="https://img.shields.io/github/v/release/CodelyTV/pr-size-labeler?style=flat-square" alt="GitHub Action version"></a>
+    <a href="https://github.com/marketplace/actions/check-critical-files"><img src="https://img.shields.io/github/v/release/CodelyTV/check-critical-files?style=flat-square" alt="GitHub Action version"></a>
 </p>
 
 <p align="center">
-    Visualize and optionally limit the size of your Pull Requests
+    Warns you when critical files are modified
 </p>
 
 ## 🚀 Usage
 
-Create a file named `labeler.yml` inside the `.github/workflows` directory and paste:
+Create a file named `checker.yml` inside the `.github/workflows` directory and paste:
 
 ```yml
-name: labeler
-
-on: [pull_request]
-
 jobs:
-  labeler:
+  check-critical-files:
     runs-on: ubuntu-latest
-    name: Label the PR size
+    name: Check for critical files
     steps:
-      - uses: codelytv/pr-size-labeler@v1
+      - uses: codelytv/check-critical-files@initial
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          xs_max_size: '10'
-          s_max_size: '100'
-          m_max_size: '500'
-          l_max_size: '1000'
-          fail_if_xl: 'false'
-          message_if_xl: 'This PR is sooooo big!! 😳'
+          critical_message: Take a look, you've commited some <b>critical file</b>
+          critical_files: |
+            .env
+            action.yml
 ```
 
-> If you want, you can customize all `*_max_size` with the size that fits in your project.
-
-> Setting `fail_if_xl` to `'true'` will make fail all pull requests bigger than `l_max_size`.
+> `critical_message` accepts `html` format.
 
 ## ⚖️ License
 
