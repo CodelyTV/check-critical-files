@@ -1,5 +1,8 @@
 name: 'Check Critical Files'
 description: 'Check for critical files in your commits and warns you'
+branding:
+  icon: 'alert-circle'
+  color: 'gray-dark'
 inputs:
   GITHUB_TOKEN:
     description: 'GitHub token'
@@ -18,6 +21,4 @@ runs:
     - ${{ inputs.GITHUB_TOKEN }}
     - ${{ inputs.critical_files }}
     - ${{ inputs.critical_files_commited_message }}
-branding:
-  icon: 'alert-circle'
-  color: 'gray-dark'
+

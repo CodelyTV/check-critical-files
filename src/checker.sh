@@ -12,7 +12,7 @@ checker::check() {
   log::message "Files: $critical_modified_files"
 
   if [ -n "$critical_modified_files" ]; then
-    local -r final_message="'$message - $critical_modified_files'"
+    local -r final_message="$message - $critical_modified_files"
 
     log::message "Message: $final_message"
     github::comment_commit "$commit_sha" "$final_message"
