@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Check for critical files
     steps:
-      - uses: codelytv/check-critical-files@initial
+      - uses: codelytv/check-critical-files@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           critical_message: Take a look, you've commited some <b>critical file</b>
