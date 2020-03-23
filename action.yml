@@ -1,5 +1,5 @@
 name: 'Check Critical Files'
-description: 'Check for critical files in your commits and warns you'
+description: '👁 Check for critical files in your commits and warns you'
 branding:
   icon: 'alert-circle'
   color: 'gray-dark'

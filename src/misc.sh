@@ -35,3 +35,7 @@ coll::map_2() {
 str::contains() {
   echo "$1" | grep "$2" || true
 }
+
+html::enlist() {
+  echo "<li>$1</li>"
+}
