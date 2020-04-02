@@ -23,6 +23,10 @@
 Create a file named `checker.yml` inside the `.github/workflows` directory and paste:
 
 ```yml
+name: Check critical files
+
+on: [pull_request]
+
 jobs:
   check-critical-files:
     runs-on: ubuntu-latest
